@@ -1,0 +1,22 @@
+fun foo(param1: int32, param2: int32): int32
+  return 1 < 2;
+;
+
+fun main(): int32
+  while 1:
+    val: int32 = 2 * 2;
+    arr: int32[2];
+
+    1 + 2 * 3;
+
+    if 1 < 2:
+
+    else
+      val = foo() + 2;
+    ;
+
+    while val < 10:
+      val = arr[2] * 2 + 2 * arr[1];
+    ;
+  ;
+;
