@@ -34,11 +34,7 @@ void parse_if(Tokenizer &tokenizer)
 
   Token token = tokenizer.peek(0);
 
-  if (token.type == Token::ELSE)
-  {
-    goto parse_else;
-  }
-  else
+  if (token.type != Token::ELSE)
   {
     parse_body(tokenizer);
     token = tokenizer.peek(0);
@@ -46,7 +42,6 @@ void parse_if(Tokenizer &tokenizer)
 
   if (token.type == Token::ELSE)
   {
-  parse_else:
     tokenizer.consume();
     parse_body(tokenizer);
   }
